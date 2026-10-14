@@ -159,6 +159,7 @@ npm run build
 ---
 
 ## 📚 Additional Documentation
+- **[VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)**: Full-Stack Vercel deployment guide with Serverless Functions.
 - **[GEMINI_SETUP.md](./GEMINI_SETUP.md)**: Google Gemini setup and zero-hallucination dual-layer grounding explanation.
 - **[FIREBASE_SETUP.md](./FIREBASE_SETUP.md)**: Firebase Authentication, Cloud Firestore setup, and Security Rules.
 - **[ACADEMIC_REPORT_DATA.md](./ACADEMIC_REPORT_DATA.md)**: System Architecture Diagram, Grounded System Prompt, and Benchmark Conversations.

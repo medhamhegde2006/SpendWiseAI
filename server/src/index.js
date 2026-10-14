@@ -27,7 +27,7 @@ app.use(cors({
 app.use(express.json({ limit: '1mb' }));
 
 // Health check endpoint (never exposes secrets)
-app.get('/health', (req, res) => {
+const healthHandler = (req, res) => {
   const configStatus = getGroqConfigStatus();
   const { model } = getConfiguredGroqModel();
 
@@ -43,11 +43,16 @@ app.get('/health', (req, res) => {
     openaiConfigured: configStatus.configured,
     configuredModel: configStatus.configured ? model : 'deterministic-rules-engine'
   });
-});
+};
 
-// API Routes
+app.get('/health', healthHandler);
+app.get('/api/health', healthHandler);
+
+// API Routes (supports both direct server and serverless rewrites)
 app.use('/api/chat', chatRouter);
+app.use('/chat', chatRouter);
 app.use('/api/finance', financeRouter);
+app.use('/finance', financeRouter);
 
 // 404 Handler
 app.use((req, res) => {
