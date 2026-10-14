@@ -30,7 +30,7 @@ In the **Configure Project** screen:
 | **Project Name** | `spendwise-ai` | Or your custom name |
 | **Framework Preset** | **Other** | Pre-configured in `vercel.json` |
 | **Root Directory** | `./` | Root of the repository (default) |
-| **Build Command** | `cd client && npm install && npm run build` | Handled automatically by `vercel.json` |
+| **Build Command** | `npm run build` | Handled automatically by `vercel.json` |
 | **Output Directory** | `client/dist` | Handled automatically by `vercel.json` |
 
 ---
