@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables (strictly exclude all real .env files while preserving .env.example)
+.env
+.env.*
+.env.local
+**/.env
+**/.env.*
+**/.env.local
+!.env.example
+!**/.env.example
+
+# Production build
+dist/
+**/dist/
+client/dist/
+dist-ssr/
+build/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+**/*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

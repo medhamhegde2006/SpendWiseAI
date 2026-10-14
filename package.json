@@ -1,0 +1,27 @@
+{
+  "name": "spendwise-ai",
+  "version": "1.0.0",
+  "description": "Digital-bank personal finance simulator with grounded OpenAI expense analysis chatbot",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "test": "npm run test --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "fintech",
+    "personal-finance",
+    "openai",
+    "vue3",
+    "chartjs",
+    "chatbot"
+  ],
+  "author": "SpendWise AI Team",
+  "license": "MIT"
+}
