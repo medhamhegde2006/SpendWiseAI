@@ -13,7 +13,7 @@
     "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
-    "build": "npm --prefix client run build",
+    "build": "node build.js",
     "test": "npm run test --prefix server"
   },
   "dependencies": {

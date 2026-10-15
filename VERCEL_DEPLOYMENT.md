@@ -31,7 +31,7 @@ In the **Configure Project** screen:
 | **Framework Preset** | **Other** | Pre-configured in `vercel.json` |
 | **Root Directory** | `./` | Root of the repository (default) |
 | **Build Command** | `npm run build` | Handled automatically by `vercel.json` |
-| **Output Directory** | `client/dist` | Handled automatically by `vercel.json` |
+| **Output Directory** | `dist` | Handled automatically by `vercel.json` |
 
 ---
 
