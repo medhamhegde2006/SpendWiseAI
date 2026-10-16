@@ -17,7 +17,7 @@ SpendWise AI is architected for seamless **Full-Stack Vercel Deployment**. The V
 ### Step 1: Import Repository into Vercel
 1. Log in to [Vercel](https://vercel.com/) (sign in with your GitHub account).
 2. Click **Add New...** > **Project**.
-3. Select your GitHub repository: **`SpendWise-AI`** (or `medhamhegde2006/SpendWise-AI`).
+3. Select your GitHub repository: **`SpendWiseAI`** (or `medhamhegde2006/SpendWiseAI`).
 4. Click **Import**.
 
 ---
@@ -77,7 +77,7 @@ If you are using Firebase Authentication (Email/Password or Google Sign-In):
 3. In the left sidebar, navigate to **Build** > **Authentication**.
 4. Open the **Settings** tab and scroll to **Authorized domains**.
 5. Click **Add domain**.
-6. Enter your Vercel deployment domain (e.g. `spendwise-ai.vercel.app` and any custom domain).
+6. Enter your Vercel deployment domain (e.g. `spendwiseai.vercel.app` and any custom domain).
 7. Click **Add**.
 
 ---
